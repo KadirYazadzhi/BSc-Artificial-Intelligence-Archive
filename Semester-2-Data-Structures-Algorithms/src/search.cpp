@@ -1,5 +1,6 @@
 #include <iostream>
 #include "search.h"
+#include "sort.h"
 #include "display.h"
 #include "add.h"
 #include "colors.h"
@@ -46,15 +47,6 @@ void searchByRefNumberBinary(Node* head) {
     int result = binarySearchRecursive(props, 0, count - 1, key);
 
     if (result != -1) {
-        cout << GREEN << getTranslatedString("SUCCESS_PROPERTY_FOUND") << RESET << endl;
-        displayPropertyDetails(props[result]);
-    } else {
-        cout << RED << getTranslatedString("ERROR_PROPERTY_NOT_FOUND") << RESET << endl;
-    }
-
-    delete[] props;
-}
-  if (result != -1) {
         cout << GREEN << getTranslatedString("SUCCESS_PROPERTY_FOUND") << RESET << endl;
         displayPropertyDetails(props[result]);
     } else {
