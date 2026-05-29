@@ -27,7 +27,7 @@ The goal of this repository is to track my evolution as a software engineer and 
 ## 🛠️ Completed Projects
 
 ### 🔵 Semester 1: Basic Programming
-**Project:** [Real Estate Agency Information System](./Semester-1-Basic-Programming/University-Project-Real-Estate-Agency/)
+**Project:** [Real Estate Agency Information System](./Semester-1-Basic-Programming/)
 
 This project was the foundational entry into software development. It focused on mastering C++ syntax, modular code structure, and persistent data management.
 
@@ -39,7 +39,7 @@ This project was the foundational entry into software development. It focused on
     *   **Robustness:** Extensive input validation and string sanitization.
 
 ### 🟢 Semester 2: Data Structures and Algorithms (DSA)
-**Project:** [Real Estate Agency - DSA Edition](./Semester-2-Data-Structures-Algorithms/Real-Estate-Agency-DSA-Edition/)
+**Project:** [Real Estate Agency - DSA Edition](./Semester-2-Data-Structures-Algorithms/)
 
 The second semester involved a complete refactoring of the previous system to implement advanced data structures and evaluate algorithmic complexity.
 
