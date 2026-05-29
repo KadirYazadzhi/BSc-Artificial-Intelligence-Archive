@@ -14,6 +14,7 @@ void bubbleSort(Node* head);
 // Array Sorting
 void quickSort(Property arr[], int low, int high);
 void selectionSort(Property arr[], int n);
+void selectionSortByRefNumber(Property arr[], int n);
 void mergeSort(Property arr[], int l, int r);
 
 // Orchestration

@@ -75,6 +75,6 @@ STATUS_SOLD_TEXT=Продаден
 STATUS_RESERVED_TEXT=Капариран
 STATUS_AVAILABLE_TEXT=Свободен
 STATUS_UNKNOWN_TEXT=Неизвестен
-GENERATE_TEST_DATA_PROMPT=Системата е празна. Желаете ли да заредите тестови данни за тестване? (y/n): 
+GENERATE_TEST_DATA_PROMPT=Системата е празна. Желаете ли да заредите тестови данни за тестване?
 TEST_DATA_GENERATED_SUCCESS_PART1=Успешно бяха генерирани 
 TEST_DATA_GENERATED_SUCCESS_PART2= тестови имота.

@@ -1,7 +1,6 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include "search.h"
+#include "sort.h"
 #include "display.h"
 #include "add.h"
 #include "colors.h"
@@ -9,12 +8,7 @@
 
 using namespace std;
 
-
-bool compareByRefNumber(const Property& a, const Property& b) {
-    return a.refNumber < b.refNumber;
-}
-
-int binarySearchRecursive(const vector<Property>& arr, int low, int high, int key) {
+int binarySearchRecursive(Property arr[], int low, int high, int key) {
     if (high >= low) {
         int mid = low + (high - low) / 2;
         if (arr[mid].refNumber == key) return mid;
@@ -31,18 +25,26 @@ void searchByRefNumberBinary(Node* head) {
     }
 
     
-    vector<Property> props;
+    int count = 0;
+    Node* temp = head;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
+
+    
+    Property* props = new Property[count];
     Node* current = head;
-    while (current != nullptr) {
-        props.push_back(current->data);
+    for (int i = 0; i < count; i++) {
+        props[i] = current->data;
         current = current->next;
     }
 
     
-    sort(props.begin(), props.end(), compareByRefNumber);
+    selectionSortByRefNumber(props, count);
 
     int key = getValidNumericInput<int>(getTranslatedString("PROMPT_REF_NUMBER").c_str());
-    int result = binarySearchRecursive(props, 0, props.size() - 1, key);
+    int result = binarySearchRecursive(props, 0, count - 1, key);
 
     if (result != -1) {
         cout << GREEN << getTranslatedString("SUCCESS_PROPERTY_FOUND") << RESET << endl;
@@ -50,4 +52,6 @@ void searchByRefNumberBinary(Node* head) {
     } else {
         cout << RED << getTranslatedString("ERROR_PROPERTY_NOT_FOUND") << RESET << endl;
     }
+
+    delete[] props;
 }

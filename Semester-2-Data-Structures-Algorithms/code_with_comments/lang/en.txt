@@ -75,6 +75,6 @@ STATUS_SOLD_TEXT=Sold
 STATUS_RESERVED_TEXT=Reserved
 STATUS_AVAILABLE_TEXT=Available
 STATUS_UNKNOWN_TEXT=Unknown
-GENERATE_TEST_DATA_PROMPT=The system is empty. Would you like to generate test data for testing? (y/n): 
+GENERATE_TEST_DATA_PROMPT=The system is empty. Would you like to generate test data for testing?
 TEST_DATA_GENERATED_SUCCESS_PART1=Successfully generated 
 TEST_DATA_GENERATED_SUCCESS_PART2= test properties.
